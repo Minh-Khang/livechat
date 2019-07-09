@@ -1,6 +1,8 @@
 defmodule LivechatWeb.Endpoint do
   use Phoenix.Endpoint, otp_app: :livechat
 
+  socket "/live", Phoenix.LiveView.Socket
+
   socket "/socket", LivechatWeb.UserSocket,
     websocket: true,
     longpoll: false

@@ -61,7 +61,8 @@ config :livechat, LivechatWeb.Endpoint,
       ~r"priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$",
       ~r"priv/gettext/.*(po)$",
       ~r"lib/livechat_web/{live,views}/.*(ex)$",
-      ~r"lib/livechat_web/templates/.*(eex)$"
+      ~r"lib/livechat_web/templates/.*(eex)$",
+      ~r"lib/livechat_web/live/.*(ex)$" # pattern for handling live reloading of new live view files
     ]
   ]
 
